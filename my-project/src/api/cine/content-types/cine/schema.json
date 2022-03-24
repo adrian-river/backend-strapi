@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cines",
+  "info": {
+    "singularName": "cine",
+    "pluralName": "cines",
+    "displayName": "cine"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cine_name": {
+      "type": "string"
+    },
+    "movies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::movie.movie",
+      "mappedBy": "cine"
+    }
+  }
+}
